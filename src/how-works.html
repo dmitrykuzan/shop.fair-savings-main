@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>FairSavings</title>
+    <meta name="description" lang="ru" content="Описание сайта" />
+
+    @include("html/common/head.html")
+  </head>
+
+  <body>
+    <div class="wrapper" data-overlay="false">
+      @include("html/common/promotional.html")
+      @include("html/common/header.html")
+      <main>
+        <div class="how-works">
+          <div class="container">
+            <ul class="breadcrumbs stack align-center">
+              <li class="breadcrumbs__item">
+                <a href="#">Home page </a>
+              </li>
+              <li class="breadcrumbs__item">
+                Политика в отношении обработки персональных данных
+              </li>
+            </ul>
+            <div
+              class="how-works__wrapper stack align-start justify-space-between"
+            >
+              <div class="how-works__content stack column">
+                <h1 class="policy-title typography">How Fairsaving works</h1>
+                <ul class="how-works__steps stack column">
+                  <li class="how-works__step stack align-center">
+                    <div class="how-works__step-image">
+                      <img
+                        src="img/ui/hand-shake.svg"
+                        width="52"
+                        height="52"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div class="how-works__step-content stack column">
+                      <div
+                        class="how-works__step-caption typography caption w-400"
+                      >
+                        Step 1
+                      </div>
+                      <div class="how-works__step-title typography h6 w-400">
+                        Join with us for free
+                      </div>
+                    </div>
+                  </li>
+                  <li class="how-works__step stack align-center">
+                    <div class="how-works__step-image">
+                      <img
+                        src="img/ui/tickets.svg"
+                        width="52"
+                        height="52"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div class="how-works__step-content stack column">
+                      <div
+                        class="how-works__step-caption typography caption w-400"
+                      >
+                        Step 2
+                      </div>
+                      <div class="how-works__step-title typography h6 w-400">
+                        Go to retailers through us
+                      </div>
+                    </div>
+                  </li>
+                  <li class="how-works__step stack align-center">
+                    <div class="how-works__step-image">
+                      <img
+                        src="img/ui/cashback.svg"
+                        width="52"
+                        height="52"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div class="how-works__step-content stack column">
+                      <div
+                        class="how-works__step-caption typography caption w-400"
+                      >
+                        Step 3
+                      </div>
+                      <div class="how-works__step-title typography h6 w-400">
+                        Shop & Earn Cashback
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="article-content stack column">
+                  <h2>Heading</h2>
+                  <p>
+                    Настоящая политика обработки персональных данных составлена
+                    в соответствии с требованиями Федерального закона от
+                    27.07.2006. №152-ФЗ «О персональных данных» и определяет
+                    порядок обработки персональных данных и меры по обеспечению
+                    безопасности персональных данных site.hotcashback.ru (далее
+                    – Оператор).
+                  </p>
+                  <ul>
+                    <li>
+                      Цель обработки персональных данных Пользователя —
+                      информирование Пользователя посредством отправки
+                      электронных писем; предоставление доступа Пользователю к
+                      сервисам, информации и/или материалам, содержащимся на
+                      веб-сайте.
+                    </li>
+                    <li>
+                      Также Оператор имеет право направлять Пользователю
+                      уведомления о новых продуктах и услугах, специальных
+                      предложениях и различных событиях. Пользователь всегда
+                      может отказаться от получения информационных сообщений,
+                      направив Оператору письмо на адрес электронной почты
+                      support@site.hotcashback.ru с пометкой «Отказ от
+                      уведомлениях о новых продуктах и услугах и специальных
+                      предложениях».
+                    </li>
+                    <li>
+                      Обезличенные данные Пользователей, собираемые с помощью
+                      сервисов интернет-статистики, служат для сбора информации
+                      о действиях Пользователей на сайте, улучшения качества
+                      сайта и его содержания.
+                    </li>
+                  </ul>
+                </div>
+                <button class="how-works__btn button">
+                  <span class="icon">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#google"></use>
+                    </svg>
+                  </span>
+                  <span class="text">Sign up with Google</span>
+                </button>
+              </div>
+              <div class="how-works__decor">
+                <img
+                  src="img/ui/works-fair-savings.png"
+                  width="486"
+                  height="552"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="payment section">
+          <div class="container">
+            <div class="payment__wrapper stack column">
+              <div class="payment__text">
+                <p>You can withdraw your cashback in any manual way:</p>
+              </div>
+              <ul class="payment__list">
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide1.svg"
+                      width="66"
+                      height="66"
+                      loading="lazy"
+                      alt="BANK Transfer"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide2.svg"
+                      width="105"
+                      height="30"
+                      loading="lazy"
+                      alt="PayPal"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide3.svg"
+                      width="116"
+                      height="24"
+                      loading="lazy"
+                      alt="Binance"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide4.svg"
+                      width="90"
+                      height="30"
+                      loading="lazy"
+                      alt="VISA"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide5.svg"
+                      width="68"
+                      height="55"
+                      loading="lazy"
+                      alt="MasterCard"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide6.svg"
+                      width="96"
+                      height="50"
+                      loading="lazy"
+                      alt="UPI"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide7.svg"
+                      width="115"
+                      height="24"
+                      loading="lazy"
+                      alt="Recharge"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide8.png"
+                      width="115"
+                      height="24"
+                      loading="lazy"
+                      alt="Amazon pay"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide9.png"
+                      width="115"
+                      height="24"
+                      loading="lazy"
+                      alt="Flipcart"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      @include("html/common/footer.html")
+    </div>
+  </body>
+</html>

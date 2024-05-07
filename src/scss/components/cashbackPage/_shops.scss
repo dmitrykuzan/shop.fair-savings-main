@@ -1,0 +1,251 @@
+.shops {
+  padding-top: 3rem;
+
+  &__title {
+    margin-bottom: 3rem;
+
+    span {
+      color: var(--clr-primary-300);
+    }
+
+    @media (max-width: em(767)) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__content {
+    gap: 3rem;
+
+    &-wrapper {
+      // position: relative;
+      gap: 3rem;
+
+      @media (max-width: em(992)) {
+        gap: 1.5rem;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    border: 0.1rem solid var(--clr-primary-300);
+    border-radius: 1.1rem;
+    padding: 0.6rem;
+    gap: 1.2rem;
+
+    &-wrapper {
+      display: flex;
+    }
+
+    @media (max-width: em(767)) {
+      gap: 0.6rem;
+    }
+  }
+
+  &__link {
+    flex-shrink: 0;
+    border-radius: 0.8rem;
+    padding: 1.2rem 2.4rem;
+    min-width: 6.7rem;
+    min-height: 4.8rem;
+    gap: 0.6rem;
+
+    svg {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+
+    span {
+      color: var(--clr-default-700);
+      transition: color var(--transition);
+    }
+
+    &.active {
+      background-color: var(--clr-hover-400);
+
+      span {
+        color: var(--clr-default-500);
+      }
+
+      svg {
+        fill: var(--clr-default-500);
+      }
+    }
+
+    &.focus-visible {
+      outline: none;
+
+      span {
+        color: var(--clr-default-500);
+      }
+    }
+
+    @media (hover) {
+      &:hover {
+        span {
+          color: var(--clr-default-500);
+        }
+      }
+    }
+
+    @media (max-width: em(767)) {
+      padding: 1.2rem;
+    }
+  }
+
+  &__sorted {
+    margin-left: auto;
+    width: max-content;
+    gap: 1.2rem;
+
+    &-name {
+      line-height: 143%;
+      color: var(--clr-default-600);
+
+      @media (max-width: em(575)) {
+        display: none;
+      }
+    }
+
+    .choices {
+     min-width: 22rem;
+
+     @media (max-width: em(575)) {
+      min-width: 19rem;
+     }
+
+    }
+
+    .choices__list--dropdown {
+      top: 7rem;
+      border: 0.1rem solid var(--clr-primary-300);
+      border-radius: 0.8rem;
+    }
+
+    .selectable, .choices__list[aria-expanded] .choices__item--selectable {
+      padding-right: initial;
+    }
+
+    .is-open .choices__inner {
+      border-radius: 0.8rem;
+    }
+
+    .choices__item {
+      font-weight: 500;
+    }
+
+    &-wrapper {
+      position: relative;
+      z-index: 30;
+    }
+  }
+
+
+  &__list-wrapper {
+    width: 100%;
+    gap: 3rem;
+  }
+
+  &__top-buttons {
+    gap: 1rem;
+  }
+
+  &__mobile-filter {
+    display: none;
+
+    @media (max-width: em(767)) {
+      display: flex;
+      border: 0.1rem solid var(--clr-default-500);
+      border-radius: 0.8rem;
+      min-width: 8.5rem;
+      min-height: 4rem;
+      gap: 0.7rem;
+
+      svg {
+        width: 1.4rem;
+        height: 1.4rem;
+        fill: var(--clr-default-500);
+      }
+
+      span {
+        color: var(--clr-default-500);
+      }
+    }
+  }
+
+  &__pagination {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+
+    &-btn {
+      width: 3.2rem;
+      height: 3.2rem;
+
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: var(--clr-default-600);
+        transform: rotate(90deg);
+        transition: fill var(--transition);
+      }
+
+      &--last {
+        svg {
+          transform: rotate(-90deg);
+        }
+      }
+
+      @media (hover) {
+        &:hover svg {
+          fill: var(--clr-default-500);
+          transition: fill var(--transition);
+        }
+      }
+    }
+
+    &-list {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+
+    &-item {
+      width: 3.2rem;
+      height: 3.2rem;
+
+      &.dots {
+        pointer-events: none;
+      }
+
+      a,
+      button {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        color: var(--clr-default-600);
+        transition: color var(--transition);
+
+        &.focus-visible {
+          outline: none;
+          color: var(--clr-default-500);
+        }
+
+        @media (hover) {
+          &:hover {
+            color: var(--clr-default-500);
+          }
+        }
+      }
+
+      &--active {
+        a,
+        button {
+          color: var(--clr-default-100);
+          background-color: var(--clr-default-500);
+        }
+      }
+    }
+  }
+}

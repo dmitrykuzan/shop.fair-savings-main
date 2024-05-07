@@ -1,0 +1,115 @@
+.modal-extension {
+  .modal__wrapper {
+    padding-top: 12rem;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    min-height: 72rem;
+    max-width: 55rem;
+
+    @media (max-width: em(992)) {
+      min-height: 62rem;
+    }
+
+    @media (max-width: em(767)) {
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 2rem;
+      min-height: 40rem;
+      max-width: 32rem;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: -1rem;
+    top: -7rem;
+    width: 73rem;
+    height: 55.4rem;
+
+    @media (max-width: em(992)) {
+      left: 50%;
+      right: initial;
+      width: 55rem;
+      height: 45rem;
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: em(767)) {
+      top: -10rem;
+      width: 25rem;
+      height: 19rem;
+    }
+  }
+
+  &__info {
+    margin-top: auto;
+    gap: 1.5rem;
+  }
+
+  &__title {
+    font-size: fluid-font(3.2rem, 2rem);
+  }
+
+  &__text {
+    p {
+      line-height: 150%;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.3rem;
+
+    @media (max-width: em(767)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    border: 0.1rem solid var(--clr-primary-300);
+    border-radius: 11rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    min-width: 11rem;
+    min-height: 4rem;
+
+    a {
+      gap: 1.5rem;
+    }
+  }
+
+  &__button {
+    gap: 1.2rem;
+
+    &-text {
+      color: var(--clr-default-600);
+    }
+
+    &-svg {
+      border: 0.1rem solid var(--clr-primary-300);
+      border-radius: 50%;
+      width: 2.4rem;
+      height: 2.4rem;
+      transition: border var(--transition);
+    }
+
+    @media (hover) {
+      &:hover {
+        .modal-extension__button-svg {
+          border: 0.1rem solid var(--clr-default-500);
+          transition: border var(--transition);
+        }
+      }
+    }
+  }
+}

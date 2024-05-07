@@ -1,0 +1,122 @@
+<button class="header__login modal-login__button stack center">
+  <span class="header__login-text"> Login/Registration </span>
+  <span class="header__login-icon">
+    <svg>
+      <use xlink:href="img/sprite.svg#login"></use>
+    </svg>
+  </span>
+</button>
+
+<button class="header__login-mobile">
+  <svg>
+    <use xlink:href="img/sprite.svg#login-mobile"></use>
+  </svg>
+</button>
+
+<div class="header__logged">
+  <button class="header__logged-button stack center">
+    <span class="header__logged-button-img">
+      <picture>
+        <source
+          srcset="
+            img/header/login-btn/avatar@1x.webp 1x,
+            img/header/login-btn/avatar@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img
+          src="img/header/login-btn/avatar@1x.jpg"
+          srcset="img/header/login-btn/avatar@2x.jpg 2x"
+          width="24"
+          height="24"
+          aria-hidden="true"
+          loading="lazy"
+        />
+      </picture>
+    </span>
+    <span class="header__logged-button-text">Name Username</span>
+  </button>
+
+  <div class="header__logged-content">
+    <ul class="header__logged-list">
+      <li class="header__logged-item">
+        <a href="#">
+          <div class="header__logged-item-image">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon1"></use>
+            </svg>
+          </div>
+          Main info
+        </a>
+      </li>
+      <li class="header__logged-item">
+        <a href="#">
+          <div class="header__logged-item-image">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon2"></use>
+            </svg>
+          </div>
+          Payment history
+        </a>
+      </li>
+      <li class="header__logged-item">
+        <a href="#">
+          <div class="header__logged-item-image">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon3"></use>
+            </svg>
+          </div>
+          Income from friends
+        </a>
+      </li>
+      <li class="header__logged-item">
+        <a href="#">
+          <div class="header__logged-item-image">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon4"></use>
+            </svg>
+          </div>
+          Help
+        </a>
+      </li>
+      <li class="header__logged-item">
+        <a href="#">
+          <div class="header__logged-item-image">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon5"></use>
+            </svg>
+          </div>
+          Refer and Earn
+        </a>
+      </li>
+      <li class="header__logged-item">
+        <a href="#">
+          <div class="header__logged-item-image">
+            <svg>
+              <use xlink:href="img/sprite.svg#log-out"></use>
+            </svg>
+          </div>
+          Log out
+        </a>
+      </li>
+    </ul>
+
+    <div class="header__logged-info stack center">
+      <div class="header__logged-info-item stack center column">
+        <p class="header__logged-info-text">Balance:</p>
+        <div class="header__logged-info-value">
+          <span>152</span>
+          <p>$</p>
+        </div>
+      </div>
+      <span class="header__logged-info-separator"></span>
+      <div class="header__logged-info-item stack center column">
+        <p class="header__logged-info-text">Expects accrual:</p>
+        <div class="header__logged-info-value">
+          <span>177</span>
+          <p>$</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

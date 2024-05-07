@@ -1,0 +1,17 @@
+.logo {
+  flex-shrink: 0;
+  max-width: 15rem;
+
+  @media (max-width: em(1320)) {
+    max-width: 10rem;
+  }
+
+
+  @media (max-width: em(767)) {
+    max-width: 14rem !important;
+  }
+
+  @media (max-width: em(575)) {
+    max-width: 17rem !important;
+  }
+}

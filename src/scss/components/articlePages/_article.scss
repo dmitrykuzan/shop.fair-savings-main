@@ -1,0 +1,142 @@
+.article {
+  padding-top: 3rem;
+
+  &-wrapper {
+    gap: 13rem;
+
+    @media (max-width: em(1200)) {
+      gap: 2.4rem;
+    }
+
+    @media (max-width: em(767)) {
+      flex-direction: column;
+
+      &.stack {
+        align-items: stretch;
+      }
+    }
+  }
+
+  &-content {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    *:first-child {
+      margin-top: 0;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 1.6rem;
+      margin-bottom: 0.8rem;
+      font-weight: 600;
+      line-height: 125%;
+    }
+
+    h2 {
+      font-size: fluid-font(2.4rem, 1.8rem);
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: fluid-font(2rem, 1.6rem);
+    }
+
+    p {
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    ul,
+    ol {
+      margin-top: 1.6rem;
+      margin-bottom: 1.6rem;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 1.6rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 1rem;
+        border-radius: 50%;
+        width: 0.6rem;
+        height: 0.6rem;
+        background-color: currentColor;
+      }
+    }
+
+    ol {
+      counter-reset: list;
+
+      li {
+        &::before {
+          counter-increment: list;
+          content: counter(list) ".";
+          margin-right: 0.4rem;
+        }
+      }
+    }
+
+    img {
+      display: flex;
+      margin: 3.2rem auto;
+      border-radius: 1.2rem;
+
+      @media (max-width: em(767)) {
+        margin: 1.6rem auto;
+      }
+    }
+
+    a[href] {
+      text-decoration: underline;
+      color: var(--clr-default-500);
+    }
+  }
+
+  &-sidebar {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 38.8rem;
+    gap: 3.2rem;
+
+    @media (max-width: em(1200)) {
+      max-width: 28.8rem;
+    }
+
+    @media (max-width: em(767)) {
+      max-width: initial;
+    }
+  }
+
+  &-stores {
+    gap: 2.8rem;
+
+    ul {
+      gap: 2.8rem;
+
+      @media (max-width: em(767)) {
+        gap: 0.8rem;
+      }
+    }
+
+    @media (max-width: em(767)) {
+      gap: 1.6rem;
+    }
+  }
+}

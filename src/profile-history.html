@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>FairSavings</title>
+    <meta name="description" lang="ru" content="Описание сайта" />
+
+    @include("html/common/head.html")
+  </head>
+
+  <body>
+    <div class="wrapper" data-overlay="false">
+      @include("html/common/promotional.html")
+      @include("html/common/header.html")
+      <main>
+        <div class="profile">
+          <div class="container">
+            <div class="profile-layout stack align-start">
+              @include("html/common/profile-sidebar.html")
+              <div class="profile-content stack column">
+                <div class="profile-head stack column">
+                  <h1 class="profile-head__title typography">
+                    Payment history
+                  </h1>
+                  <div class="profile-head__subtitle">
+                    Here the history of the vision will be shown
+                  </div>
+                </div>
+                <div
+                  class="profile-cash stack align-center justify-space-between"
+                >
+                  <div
+                    class="profile-cash-card stack column justify-space-between white"
+                  >
+                    <div
+                      class="profile-cash-card__title stack align-center typography"
+                    >
+                      On balance
+                      <div class="profile-cash-card__tooltip">
+                        <img
+                          src="img/ui/tooltip.svg"
+                          width="16"
+                          height="16"
+                          alt="Tooltip - On Balance"
+                        />
+                        <div class="profile-cash-card__tooltip-content">
+                          Tooltip content
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="profile-cash-card__content stack align-end justify-space-between"
+                    >
+                      <div class="profile-cash-card__info stack column">
+                        <div class="typography caption w-400">You earn:</div>
+                        <div class="profile-cash-card__cash stack align-center">
+                          <div class="profile-cash-card__number typography">
+                            52
+                          </div>
+                          <div class="stack column">
+                            <span>$</span>
+                            <span>Bonus</span>
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        href="/"
+                        class="profile-cash-card__action stack align-center"
+                      >
+                        <span class="typography w-400 white">
+                          Withdraw money
+                        </span>
+                        <span class="icon stack center">
+                          <svg
+                            width="6"
+                            height="10"
+                            viewBox="0 0 6 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 1L5 5L1 9"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="profile-cash-card stack column justify-space-between"
+                  >
+                    <div
+                      class="profile-cash-card__title stack align-center typography"
+                    >
+                      On balance
+                      <div class="profile-cash-card__tooltip">
+                        <img
+                          src="img/ui/tooltip.svg"
+                          width="16"
+                          height="16"
+                          alt="Tooltip - On Balance"
+                        />
+                        <div class="profile-cash-card__tooltip-content">
+                          Tooltip content
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="profile-cash-card__content stack align-end justify-space-between"
+                    >
+                      <div class="profile-cash-card__info stack column">
+                        <div class="typography caption w-400">You earn:</div>
+                        <div class="profile-cash-card__cash stack align-center">
+                          <div class="profile-cash-card__number typography">
+                            52
+                          </div>
+                          <div class="stack column">
+                            <span>$</span>
+                            <span>Bonus</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-table stack column">
+                  <div class="profile-table__wrapper">
+                    <table>
+                      <thead>
+                        <tr>
+                          <td>
+                            <div class="sortable stack align-center">
+                              The shops
+                              <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  class="asc"
+                                  d="M5.3945 8.07897H9.93921C10.2785 8.07897 10.4587 7.6493 10.2332 7.3776L7.96106 4.64162C7.92421 4.59709 7.87894 4.56145 7.82826 4.53704C7.77758 4.51262 7.72263 4.5 7.66705 4.5C7.61148 4.5 7.55653 4.51262 7.50585 4.53704C7.45517 4.56145 7.4099 4.59709 7.37305 4.64162L5.1001 7.3776C4.87458 7.6493 5.05484 8.07897 5.3945 8.07897Z"
+                                />
+                                <path
+                                  class="desc"
+                                  d="M7.50507 12.4634C7.45439 12.439 7.40913 12.4033 7.37227 12.3588L5.10011 9.62325C4.87459 9.35154 5.05485 8.92188 5.39412 8.92188H9.93844C10.2781 8.92188 10.4584 9.35154 10.2324 9.62282L7.96029 12.3588C7.92343 12.4033 7.87817 12.439 7.82748 12.4634C7.7768 12.4878 7.72186 12.5004 7.66628 12.5004C7.6107 12.5004 7.55576 12.4878 7.50507 12.4634Z"
+                                />
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="sortable stack align-center">
+                              Order number
+                              <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  class="asc"
+                                  d="M5.3945 8.07897H9.93921C10.2785 8.07897 10.4587 7.6493 10.2332 7.3776L7.96106 4.64162C7.92421 4.59709 7.87894 4.56145 7.82826 4.53704C7.77758 4.51262 7.72263 4.5 7.66705 4.5C7.61148 4.5 7.55653 4.51262 7.50585 4.53704C7.45517 4.56145 7.4099 4.59709 7.37305 4.64162L5.1001 7.3776C4.87458 7.6493 5.05484 8.07897 5.3945 8.07897Z"
+                                />
+                                <path
+                                  class="desc"
+                                  d="M7.50507 12.4634C7.45439 12.439 7.40913 12.4033 7.37227 12.3588L5.10011 9.62325C4.87459 9.35154 5.05485 8.92188 5.39412 8.92188H9.93844C10.2781 8.92188 10.4584 9.35154 10.2324 9.62282L7.96029 12.3588C7.92343 12.4033 7.87817 12.439 7.82748 12.4634C7.7768 12.4878 7.72186 12.5004 7.66628 12.5004C7.6107 12.5004 7.55576 12.4878 7.50507 12.4634Z"
+                                />
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="sortable stack align-center">
+                              Sum
+                              <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  class="asc"
+                                  d="M5.3945 8.07897H9.93921C10.2785 8.07897 10.4587 7.6493 10.2332 7.3776L7.96106 4.64162C7.92421 4.59709 7.87894 4.56145 7.82826 4.53704C7.77758 4.51262 7.72263 4.5 7.66705 4.5C7.61148 4.5 7.55653 4.51262 7.50585 4.53704C7.45517 4.56145 7.4099 4.59709 7.37305 4.64162L5.1001 7.3776C4.87458 7.6493 5.05484 8.07897 5.3945 8.07897Z"
+                                />
+                                <path
+                                  class="desc"
+                                  d="M7.50507 12.4634C7.45439 12.439 7.40913 12.4033 7.37227 12.3588L5.10011 9.62325C4.87459 9.35154 5.05485 8.92188 5.39412 8.92188H9.93844C10.2781 8.92188 10.4584 9.35154 10.2324 9.62282L7.96029 12.3588C7.92343 12.4033 7.87817 12.439 7.82748 12.4634C7.7768 12.4878 7.72186 12.5004 7.66628 12.5004C7.6107 12.5004 7.55576 12.4878 7.50507 12.4634Z"
+                                />
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="sortable stack align-center">
+                              Cashback
+                              <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  class="asc"
+                                  d="M5.3945 8.07897H9.93921C10.2785 8.07897 10.4587 7.6493 10.2332 7.3776L7.96106 4.64162C7.92421 4.59709 7.87894 4.56145 7.82826 4.53704C7.77758 4.51262 7.72263 4.5 7.66705 4.5C7.61148 4.5 7.55653 4.51262 7.50585 4.53704C7.45517 4.56145 7.4099 4.59709 7.37305 4.64162L5.1001 7.3776C4.87458 7.6493 5.05484 8.07897 5.3945 8.07897Z"
+                                />
+                                <path
+                                  class="desc"
+                                  d="M7.50507 12.4634C7.45439 12.439 7.40913 12.4033 7.37227 12.3588L5.10011 9.62325C4.87459 9.35154 5.05485 8.92188 5.39412 8.92188H9.93844C10.2781 8.92188 10.4584 9.35154 10.2324 9.62282L7.96029 12.3588C7.92343 12.4033 7.87817 12.439 7.82748 12.4634C7.7768 12.4878 7.72186 12.5004 7.66628 12.5004C7.6107 12.5004 7.55576 12.4878 7.50507 12.4634Z"
+                                />
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="sortable stack align-center">
+                              Status
+                              <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  class="asc"
+                                  d="M5.3945 8.07897H9.93921C10.2785 8.07897 10.4587 7.6493 10.2332 7.3776L7.96106 4.64162C7.92421 4.59709 7.87894 4.56145 7.82826 4.53704C7.77758 4.51262 7.72263 4.5 7.66705 4.5C7.61148 4.5 7.55653 4.51262 7.50585 4.53704C7.45517 4.56145 7.4099 4.59709 7.37305 4.64162L5.1001 7.3776C4.87458 7.6493 5.05484 8.07897 5.3945 8.07897Z"
+                                />
+                                <path
+                                  class="desc"
+                                  d="M7.50507 12.4634C7.45439 12.439 7.40913 12.4033 7.37227 12.3588L5.10011 9.62325C4.87459 9.35154 5.05485 8.92188 5.39412 8.92188H9.93844C10.2781 8.92188 10.4584 9.35154 10.2324 9.62282L7.96029 12.3588C7.92343 12.4033 7.87817 12.439 7.82748 12.4634C7.7768 12.4878 7.72186 12.5004 7.66628 12.5004C7.6107 12.5004 7.55576 12.4878 7.50507 12.4634Z"
+                                />
+                              </svg>
+                            </div>
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="stack column">
+                              <div class="typography h6 w-400">Booking.com</div>
+                              <div
+                                class="profile-table__td-caption typography caption grey w-400"
+                              >
+                                17.09.2023
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="typography h6 w-400">32613324276</div>
+                          </td>
+                          <td>
+                            <div class="stack column">
+                              <div class="typography h6 w-400">11,63 $</div>
+                              <div
+                                class="profile-table__td-caption typography caption grey w-400"
+                              >
+                                ( 389,90 ₹)
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="typography h6 w-400">0,00$</div>
+                          </td>
+                          <td>
+                            <div class="typography h6 w-500 success">
+                              Confirmed
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="stack column">
+                              <div class="typography h6 w-400">Booking.com</div>
+                              <div
+                                class="profile-table__td-caption typography caption grey w-400"
+                              >
+                                17.09.2023
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="typography h6 w-400">32613324276</div>
+                          </td>
+                          <td>
+                            <div class="stack column">
+                              <div class="typography h6 w-400">11,63 $</div>
+                              <div
+                                class="profile-table__td-caption typography caption grey w-400"
+                              >
+                                ( 389,90 ₹)
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="typography h6 w-400">0,00$</div>
+                          </td>
+                          <td>
+                            <div class="typography h6 w-500 success">
+                              Confirmed
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="shops__pagination stack center">
+                    <button class="shops__pagination-btn stack center">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#filter-arrow"></use>
+                      </svg>
+                    </button>
+
+                    <ul class="shops__pagination-list stack align-center">
+                      <li
+                        class="shops__pagination-item stack shops__pagination-item--active"
+                      >
+                        <a href="#" class="stack center">1</a>
+                      </li>
+                      <li class="shops__pagination-item stack">
+                        <a href="#" class="stack center">2</a>
+                      </li>
+                      <li class="shops__pagination-item stack">
+                        <a href="#" class="stack center">3</a>
+                      </li>
+                      <li class="shops__pagination-item stack center dots">
+                        ...
+                      </li>
+                      <li class="shops__pagination-item stack">
+                        <a href="#" class="stack center">11</a>
+                      </li>
+                      <li class="shops__pagination-item stack">
+                        <a href="#" class="stack center">12</a>
+                      </li>
+                      <li class="shops__pagination-item stack">
+                        <a href="#" class="stack center">13</a>
+                      </li>
+                    </ul>
+
+                    <button
+                      class="shops__pagination-btn shops__pagination-btn--last stack center"
+                    >
+                      <svg>
+                        <use xlink:href="img/sprite.svg#filter-arrow"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @include("html/common/footer.html")
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.new {
+
+  &__navigation {
+    margin-bottom: 5rem;
+    padding-left: calc((100% - 60rem) / 2);
+
+    @media (max-width: em(992)) {
+      padding-left: initial;
+    }
+
+    @media (max-width: em(575)) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__title {
+  }
+
+  &__slider {
+    padding-right: 1.5rem;
+    padding-left: calc((100% - 60rem) / 2);
+
+    @media (max-width: em(992)) {
+      padding-left: 1.5rem;
+    }
+
+    &-slide {
+      min-height: 15rem;
+
+      @media (max-width: em(575)) {
+        min-height: 17rem;
+      }
+    }
+  }
+}

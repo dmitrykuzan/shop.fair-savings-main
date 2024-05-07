@@ -1,0 +1,216 @@
+.footer {
+  padding-top: 6rem;
+  padding-bottom: 9rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--clr-default-100);
+  background-color: var(--clr-default-700);
+
+  &-wrapper {
+    gap: 14rem;
+
+    @media (max-width: em(1200)) {
+      gap: 6rem;
+    }
+
+    @media (max-width: em(992)) {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+  }
+
+  &-content {
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+
+      &-catalog {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.4rem;
+
+        a {
+          line-height: 150%;
+          transition: color var(--transition);
+
+          &.focus-visible {
+            outline: none;
+            color: var(--clr-default-500);
+          }
+
+          @media (hover) {
+            &:hover {
+              color: var(--clr-default-500);
+            }
+          }
+        }
+
+        @media (max-width: em(1200)) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: em(576)) {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.6rem;
+        }
+      }
+
+      &-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.4rem;
+
+        a {
+          line-height: 150%;
+          transition: color var(--transition);
+
+          &.focus-visible {
+            outline: none;
+            color: var(--clr-default-500);
+          }
+
+          @media (hover) {
+            &:hover {
+              color: var(--clr-default-500);
+            }
+          }
+        }
+
+        @media (max-width: em(576)) {
+          gap: 1.6rem;
+        }
+      }
+
+      &-extensions {
+        gap: 1.2rem;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          width: 4rem;
+          height: 4rem;
+          background-color: var(--clr-default-100);
+          transition: background-color var(--transition);
+
+          img {
+            width: 2.4rem;
+            height: 2.4rem;
+          }
+
+          &.focus-visible {
+            outline: none;
+            background-color: var(--clr-default-500);
+          }
+
+          @media (hover) {
+            &:hover {
+              background-color: var(--clr-default-500);
+            }
+          }
+        }
+      }
+    }
+
+    &--left {
+      position: relative;
+      flex-basis: 0 1 70%;
+      gap: 10rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -7rem;
+        top: -6rem;
+        width: 0.1rem;
+        height: calc(100% + 15rem);
+        background-color: rgba(230, 230, 230, 0.15);
+
+        @media (max-width: em(1200)) {
+          display: none;
+        }
+      }
+    }
+
+    &--right {
+      flex: 0 1 30%;
+      gap: 4.8rem;
+
+      @media (max-width: em(992)) {
+        gap: 3.2rem;
+      }
+    }
+  }
+
+  &-bottom {
+    gap: 1.6rem;
+
+    &__left {
+      color: var(--clr-default-600);
+
+      a {
+        color: var(--clr-default-100);
+        transition: color var(--transition);
+
+        &.focus-visible {
+          outline: none;
+          color: var(--clr-default-500);
+        }
+
+        @media (hover) {
+          &:hover {
+            color: var(--clr-default-500);
+          }
+        }
+      }
+    }
+
+    &__right {
+      gap: 1.6rem;
+
+      a {
+        display: flex;
+        opacity: 0.5;
+        transition: opacity var(--transition);
+
+        &.focus-visible {
+          outline: none;
+          opacity: 1;
+        }
+
+        @media (hover) {
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &--desctop {
+      @media (max-width: em(992)) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      @media (min-width: em(993)) {
+        display: none;
+      }
+    }
+
+    @media (max-width: em(992)) {
+      flex-direction: column;
+
+      &.stack {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  @media (max-width: em(767)) {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+  }
+}

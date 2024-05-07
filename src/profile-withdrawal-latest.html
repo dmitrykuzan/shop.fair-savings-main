@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>FairSavings</title>
+    <meta name="description" lang="ru" content="Описание сайта" />
+
+    @include("html/common/head.html")
+  </head>
+
+  <body>
+    <div class="wrapper" data-overlay="false">
+      @include("html/common/promotional.html")
+      @include("html/common/header.html")
+      <main>
+        <div class="profile">
+          <div class="container">
+            <div class="profile-layout stack align-start">
+              @include("html/common/profile-sidebar.html")
+              <div class="profile-content stack column">
+                <div class="profile-head stack column">
+                  <a class="profile-head__back"> ← Main info </a>
+                  <h1 class="profile-head__title typography">
+                    Choose a withdrawal method:
+                  </h1>
+                </div>
+                <div class="profile-withdrawals__wrapper stack column">
+                  <div class="typography w-500 h6">Latest translations:</div>
+                  <ul class="profile-withdrawals">
+                    <li class="profile-withdrawal">
+                      <a href="/" class="stack column">
+                        <div class="profile-withdrawal__content">
+                          <div class="profile-withdrawal__image">
+                            <img
+                              src="img/ui/payments/bank-transfer.svg"
+                              width="212"
+                              height="77"
+                              alt="Bank Transfer"
+                            />
+                          </div>
+                          <div
+                            class="profile-withdrawal__saved typography caption w-400"
+                          >
+                            roo*****@***.com
+                          </div>
+                        </div>
+
+                        <div class="profile-withdrawal__info stack">
+                          <div
+                            class="profile-withdrawal__info-item stack column"
+                          >
+                            <div
+                              class="profile-withdrawal__info-title typography w-400 caption"
+                            >
+                              Withdrawal from
+                            </div>
+                            <div
+                              class="profile-withdrawal__info-subtitle typography"
+                            >
+                              14%
+                            </div>
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-item stack column"
+                          >
+                            <div
+                              class="profile-withdrawal__info-title typography w-400 caption"
+                            >
+                              Commission
+                            </div>
+                            <div
+                              class="profile-withdrawal__info-subtitle typography"
+                            >
+                              0%
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="profile-withdrawal">
+                      <a href="/" class="stack column">
+                        <div class="profile-withdrawal__content">
+                          <div class="profile-withdrawal__image">
+                            <img
+                              src="img/ui/payments/binance.svg"
+                              width="212"
+                              height="77"
+                              alt="Binance"
+                            />
+                          </div>
+                          <div
+                            class="profile-withdrawal__saved typography caption w-400"
+                          >
+                            roo*****@***.com
+                          </div>
+                        </div>
+
+                        <div class="profile-withdrawal__info stack">
+                          <div
+                            class="profile-withdrawal__info-item stack column"
+                          >
+                            <div
+                              class="profile-withdrawal__info-title typography w-400 caption"
+                            >
+                              Withdrawal from
+                            </div>
+                            <div
+                              class="profile-withdrawal__info-subtitle typography"
+                            >
+                              14%
+                            </div>
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-item stack column"
+                          >
+                            <div
+                              class="profile-withdrawal__info-title typography w-400 caption"
+                            >
+                              Commission
+                            </div>
+                            <div
+                              class="profile-withdrawal__info-subtitle typography"
+                            >
+                              0%
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="profile-divider"></div>
+                <ul class="profile-withdrawals">
+                  <li class="profile-withdrawal">
+                    <a href="/" class="stack column">
+                      <div class="profile-withdrawal__content">
+                        <div class="profile-withdrawal__image">
+                          <img
+                            src="img/ui/payments/bank-transfer.svg"
+                            width="212"
+                            height="77"
+                            alt="Bank Transfer"
+                          />
+                        </div>
+                        <!-- <div
+                          class="profile-withdrawal__saved typography caption w-400"
+                        >
+                          roo*****@***.com
+                        </div> -->
+                      </div>
+
+                      <div class="profile-withdrawal__info stack">
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Withdrawal from
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            14%
+                          </div>
+                        </div>
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Commission
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="profile-withdrawal">
+                    <a href="/" class="stack column">
+                      <div class="profile-withdrawal__content">
+                        <div class="profile-withdrawal__image">
+                          <img
+                            src="img/ui/payments/binance.svg"
+                            width="212"
+                            height="77"
+                            alt="Binance"
+                          />
+                        </div>
+                        <!-- <div
+                          class="profile-withdrawal__saved typography caption w-400"
+                        >
+                          roo*****@***.com
+                        </div> -->
+                      </div>
+
+                      <div class="profile-withdrawal__info stack">
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Withdrawal from
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            14%
+                          </div>
+                        </div>
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Commission
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="profile-withdrawal">
+                    <a href="/" class="stack column">
+                      <div class="profile-withdrawal__content">
+                        <div class="profile-withdrawal__image">
+                          <img
+                            src="img/ui/payments/visa.svg"
+                            width="212"
+                            height="77"
+                            alt="Visa"
+                          />
+                        </div>
+                        <!-- <div
+                          class="profile-withdrawal__saved typography caption w-400"
+                        >
+                          roo*****@***.com
+                        </div> -->
+                      </div>
+
+                      <div class="profile-withdrawal__info stack">
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Withdrawal from
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            14%
+                          </div>
+                        </div>
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Commission
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="profile-withdrawal">
+                    <a href="/" class="stack column">
+                      <div class="profile-withdrawal__content">
+                        <div class="profile-withdrawal__image">
+                          <img
+                            src="img/ui/payments/mastercard.svg"
+                            width="212"
+                            height="77"
+                            alt="Mastercard"
+                          />
+                        </div>
+                        <!-- <div
+                          class="profile-withdrawal__saved typography caption w-400"
+                        >
+                          roo*****@***.com
+                        </div> -->
+                      </div>
+
+                      <div class="profile-withdrawal__info stack">
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Withdrawal from
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            14%
+                          </div>
+                        </div>
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Commission
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="profile-withdrawal">
+                    <a href="/" class="stack column">
+                      <div class="profile-withdrawal__content">
+                        <div class="profile-withdrawal__image">
+                          <img
+                            src="img/ui/payments/paypal.svg"
+                            width="212"
+                            height="77"
+                            alt="Paypal"
+                          />
+                        </div>
+                        <!-- <div
+                          class="profile-withdrawal__saved typography caption w-400"
+                        >
+                          roo*****@***.com
+                        </div> -->
+                      </div>
+
+                      <div class="profile-withdrawal__info stack">
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Withdrawal from
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            14%
+                          </div>
+                        </div>
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Commission
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="profile-withdrawal">
+                    <a href="/" class="stack column">
+                      <div class="profile-withdrawal__content">
+                        <div class="profile-withdrawal__image">
+                          <img
+                            src="img/ui/payments/upi.svg"
+                            width="212"
+                            height="77"
+                            alt="Upi"
+                          />
+                        </div>
+                        <!-- <div
+                          class="profile-withdrawal__saved typography caption w-400"
+                        >
+                          roo*****@***.com
+                        </div> -->
+                      </div>
+
+                      <div class="profile-withdrawal__info stack">
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Withdrawal from
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            14%
+                          </div>
+                        </div>
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Commission
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="profile-withdrawal">
+                    <a href="/" class="stack column">
+                      <div class="profile-withdrawal__content">
+                        <div class="profile-withdrawal__image">
+                          <img
+                            src="img/ui/payments/recharge.svg"
+                            width="212"
+                            height="77"
+                            alt="Recharge"
+                          />
+                        </div>
+                        <!-- <div
+                          class="profile-withdrawal__saved typography caption w-400"
+                        >
+                          roo*****@***.com
+                        </div> -->
+                      </div>
+
+                      <div class="profile-withdrawal__info stack">
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Withdrawal from
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            14%
+                          </div>
+                        </div>
+                        <div class="profile-withdrawal__info-item stack column">
+                          <div
+                            class="profile-withdrawal__info-title typography w-400 caption"
+                          >
+                            Commission
+                          </div>
+                          <div
+                            class="profile-withdrawal__info-subtitle typography"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="profile-table stack column">
+                  <div class="profile-head__title typography">
+                    Payment history
+                  </div>
+                  <div class="profile-table__wrapper">
+                    <table>
+                      <thead>
+                        <tr>
+                          <td>Payment type</td>
+                          <td>Sum</td>
+                          <td>Sent</td>
+                          <td>Date</td>
+                          <td>Status</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="stack column">
+                              <div class="typography h6 w-400">VIsa</div>
+                              <div
+                                class="profile-table__td-caption typography caption grey w-400"
+                              >
+                                **** **** **** 3131
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="typography h6 w-400">22,00 $</div>
+                          </td>
+                          <td>
+                            <div class="stack column">
+                              <div class="typography h6 w-400">19,36 $</div>
+                              <div
+                                class="profile-table__td-caption typography caption grey w-400"
+                              >
+                                ( 2,64 $)
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="typography h6 w-400">
+                              22.10.2022 at 15:10:04
+                            </div>
+                          </td>
+                          <td>
+                            <div class="typography h6 w-500 success">
+                              Confirmed
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @include("html/common/footer.html")
+    </div>
+  </body>
+</html>

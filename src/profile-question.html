@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>FairSavings</title>
+    <meta name="description" lang="ru" content="Описание сайта" />
+
+    @include("html/common/head.html")
+  </head>
+
+  <body>
+    <div class="wrapper" data-overlay="false">
+      @include("html/common/promotional.html")
+      @include("html/common/header.html")
+      <main>
+        <div class="profile">
+          <div class="container">
+            <div class="profile-layout stack align-start">
+              @include("html/common/profile-sidebar.html")
+              <div class="profile-content stack column">
+                <div class="profile-head stack column">
+                  <a href="/" class="profile-head__back"> ← Back </a>
+                  <h1 class="profile-head__title typography">
+                    Question ID: 1685996
+                  </h1>
+                </div>
+                <ul class="profile-chat stack column">
+                  <li class="profile-chat__message stack column">
+                    <div
+                      class="profile-chat__message-head stack align-center justify-space-between"
+                    >
+                      <div
+                        class="profile-chat__message-info stack align-center"
+                      >
+                        <div class="profile-chat__message-avatar">
+                          <div>
+                            <img
+                              src="img/news/slide1@2x.jpg"
+                              width="52"
+                              height="52"
+                              alt="just human"
+                            />
+                          </div>
+                        </div>
+                        <div class="profile-chat__message-person stack column">
+                          <div class="typography w-500 h6">just human</div>
+                          <div class="typography w-400 grey">17.09.2023</div>
+                        </div>
+                      </div>
+                      <div class="typography w-400 grey">You</div>
+                    </div>
+                    <div class="profile-chat__message-body stack column">
+                      <p>Test....</p>
+                    </div>
+                  </li>
+                  <li class="profile-chat__message stack column">
+                    <div
+                      class="profile-chat__message-head stack align-center justify-space-between"
+                    >
+                      <div
+                        class="profile-chat__message-info stack align-center"
+                      >
+                        <div class="profile-chat__message-avatar">
+                          <div>
+                            <img
+                              src="img/news/slide1@2x.jpg"
+                              width="52"
+                              height="52"
+                              alt="just human"
+                            />
+                          </div>
+                        </div>
+                        <div class="profile-chat__message-person stack column">
+                          <div class="typography w-500 h6">just human</div>
+                          <div class="typography w-400 grey">17.09.2023</div>
+                        </div>
+                      </div>
+                      <div class="typography w-400 grey">Administration</div>
+                    </div>
+                    <div class="profile-chat__message-body stack column">
+                      <p>Good morning. Thanks for the request :)</p>
+                      <p>
+                        If you need help, please contact 😉 I wish you a
+                        peaceful and beautiful day!
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <form class="profile-form__chat stack column">
+                  <div class="form-textarea">
+                    <label>
+                      <div class="form-textarea__wrapper">
+                        <textarea placeholder="Your message"></textarea>
+                      </div>
+                    </label>
+                  </div>
+                  <button class="profile-form__button button solid">
+                    Send question
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @include("html/common/footer.html")
+    </div>
+  </body>
+</html>

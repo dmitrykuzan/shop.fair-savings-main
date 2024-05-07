@@ -1,0 +1,40 @@
+.form-textarea {
+  label {
+    position: relative;
+    display: block;
+  }
+
+  &__wrapper {
+    display: flex;
+    border: 1px solid var(--clr-primary-300);
+    border-radius: 0.8rem;
+    height: 100%;
+    transition: border-color var(--transition);
+
+    &:focus-within {
+      border-color: var(--clr-default-500);
+    }
+
+    textarea {
+      overflow: auto;
+      border: none;
+      border-radius: 0.8rem;
+      padding: 1.6rem 1.4rem;
+      width: 100%;
+      min-height: 15.6rem;
+      max-height: 20.6rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 150%;
+      resize: none;
+
+      &::placeholder {
+        color: var(--clr-default-600);
+      }
+
+      &.focus-visible {
+        outline: none;
+      }
+    }
+  }
+}

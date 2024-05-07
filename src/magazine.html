@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Magazine</title>
+  <meta name="description" lang="ru" content="Описание сайта">
+
+  @include("html/common/head.html")
+</head>
+
+<body>
+  <div class="wrapper" data-overlay="false">
+    @include("html/common/promotional.html")
+    @include("html/common/header.html")
+    <main>
+      @include("html/magazinePage/ticket.html")
+      @include("html/magazinePage/similar.html")
+      @include("html/magazinePage/payment.html")
+    </main>
+    @include("html/common/footer.html")
+  </div>
+</body>
+
+</html>

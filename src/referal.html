@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>FairSavings</title>
+    <meta name="description" lang="ru" content="Описание сайта" />
+
+    @include("html/common/head.html")
+  </head>
+
+  <body>
+    <div class="wrapper" data-overlay="false">
+      @include("html/common/promotional.html")
+      @include("html/common/header.html")
+      <main>
+        <div class="container">
+          <ul class="breadcrumbs stack align-center">
+            <li class="breadcrumbs__item">
+              <a href="#">Home page </a>
+            </li>
+            <li class="breadcrumbs__item">Blog</li>
+          </ul>
+        </div>
+        <section class="referal-hero hero stack center">
+          <div class="hero__bg">
+            <picture>
+              <source
+                srcset="
+                  img/referal/hero-mobile@1x.webp 1x,
+                  img/referal/hero-mobile@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 576px)"
+              />
+              <source
+                srcset="
+                  img/referal/hero-mobile@1x.jpg 1x,
+                  img/referal/hero-mobile@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 576px)"
+              />
+              <source
+                srcset="
+                  img/referal/hero@1x.webp 1x,
+                  img/referal/hero@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                src="img/referal/hero@1x.jpg"
+                srcset="img/referal/hero@2x.jpg 2x"
+                width="1920"
+                height="508"
+                aria-hidden="true"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="container">
+            <div class="hero__wrapper stack align-center column">
+              <div class="hero__info stack column align-center">
+                <h1 class="hero__title typography h1">
+                  Invite your friends and get 20% of their cashback!
+                </h1>
+                <div class="hero__text">
+                  <p>
+                    Tell your friends about cashback purchases. Sharing has
+                    become not only pleasant, but also useful.
+                  </p>
+                </div>
+                <button class="referal-hero__btn button">Invite friends</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="referal-advantages">
+          <div class="container">
+            <h2 class="stores__title typography h2">
+              2721 stores with cashback
+            </h2>
+            <ul class="referal-advantages__list">
+              <li class="how-works__step stack align-center">
+                <div class="how-works__step-image">
+                  <img
+                    src="img/ui/share.svg"
+                    width="52"
+                    height="52"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+                <div class="how-works__step-content stack column">
+                  <div class="how-works__step-caption typography caption w-400">
+                    Step 1
+                  </div>
+                  <div class="how-works__step-title typography h6 w-400">
+                    Share your affiliate link with friends
+                  </div>
+                </div>
+              </li>
+              <li class="how-works__step stack align-center">
+                <div class="how-works__step-image">
+                  <img
+                    src="img/ui/user-plus.svg"
+                    width="52"
+                    height="52"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+                <div class="how-works__step-content stack column">
+                  <div class="how-works__step-caption typography caption w-400">
+                    Step 2
+                  </div>
+                  <div class="how-works__step-title typography h6 w-400">
+                    They register on our website
+                  </div>
+                </div>
+              </li>
+              <li class="how-works__step stack align-center">
+                <div class="how-works__step-image">
+                  <img
+                    src="img/ui/shopping.svg"
+                    width="52"
+                    height="52"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+                <div class="how-works__step-content stack column">
+                  <div class="how-works__step-caption typography caption w-400">
+                    Step 3
+                  </div>
+                  <div class="how-works__step-title typography h6 w-400">
+                    Do shopping and get cashback
+                  </div>
+                </div>
+              </li>
+              <li class="how-works__step stack align-center">
+                <div class="how-works__step-image">
+                  <img
+                    src="img/ui/cashback-percent.svg"
+                    width="52"
+                    height="52"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+                <div class="how-works__step-content stack column">
+                  <div class="how-works__step-caption typography caption w-400">
+                    Step 4
+                  </div>
+                  <div class="how-works__step-title typography h6 w-400">
+                    You are getting % from each friend's cashback
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="referal-statistics">
+          <div class="container">
+            <h2 class="stores__title typography h2">Your statistics</h2>
+            <ul class="referal-statistics__list">
+              <li class="profile-cash-card stack column justify-space-between">
+                <div
+                  class="profile-cash-card__title stack align-center typography"
+                >
+                  Total orders
+                  <div class="profile-cash-card__tooltip">
+                    <img
+                      src="img/ui/tooltip-light.svg"
+                      width="16"
+                      height="16"
+                      alt="Tooltip - Total orders"
+                    />
+                    <div class="profile-cash-card__tooltip-content">
+                      Tooltip content
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile-cash-card__content stack align-end justify-space-between"
+                >
+                  <div class="profile-cash-card__info stack column">
+                    <div class="profile-cash-card__cash stack align-center">
+                      <div class="profile-cash-card__number typography">52</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile-cash-card stack column justify-space-between">
+                <div
+                  class="profile-cash-card__title stack align-center typography"
+                >
+                  Total orders
+                  <div class="profile-cash-card__tooltip">
+                    <img
+                      src="img/ui/tooltip-light.svg"
+                      width="16"
+                      height="16"
+                      alt="Tooltip - Total orders"
+                    />
+                    <div class="profile-cash-card__tooltip-content">
+                      Tooltip content
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile-cash-card__content stack align-end justify-space-between"
+                >
+                  <div class="profile-cash-card__info stack column">
+                    <div class="profile-cash-card__cash stack align-center">
+                      <div class="profile-cash-card__number typography">52</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile-cash-card stack column justify-space-between">
+                <div
+                  class="profile-cash-card__title stack align-center typography"
+                >
+                  Total orders
+                  <div class="profile-cash-card__tooltip">
+                    <img
+                      src="img/ui/tooltip-light.svg"
+                      width="16"
+                      height="16"
+                      alt="Tooltip - Total orders"
+                    />
+                    <div class="profile-cash-card__tooltip-content">
+                      Tooltip content
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile-cash-card__content stack align-end justify-space-between"
+                >
+                  <div class="profile-cash-card__info stack column">
+                    <div class="profile-cash-card__cash stack align-center">
+                      <div class="profile-cash-card__number typography">52</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile-cash-card stack column justify-space-between">
+                <div
+                  class="profile-cash-card__title stack align-center typography"
+                >
+                  Total orders
+                  <div class="profile-cash-card__tooltip">
+                    <img
+                      src="img/ui/tooltip-light.svg"
+                      width="16"
+                      height="16"
+                      alt="Tooltip - Total orders"
+                    />
+                    <div class="profile-cash-card__tooltip-content">
+                      Tooltip content
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile-cash-card__content stack align-end justify-space-between"
+                >
+                  <div class="profile-cash-card__info stack column">
+                    <div class="profile-cash-card__cash stack align-center">
+                      <div class="profile-cash-card__number typography">52</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="referal-rules">
+          <div class="container">
+            <h2 class="stores__title typography h2">
+              Attention! Before working with an affiliate program, read the
+              rules! It is forbidden...
+            </h2>
+            <ul class="referal-rules__list">
+              <li class="referal-rules__item stack">
+                <div class="referal-rules__item-number">01</div>
+                <div class="referal-rules__item-content stack column">
+                  <div class="typography h6">Send a bulk offer</div>
+                  <div class="typography w-400 lh-150">
+                    In private messages in social networks, groups, communities
+                    of partner stores, in email newsletters, etc. We are against
+                    spam in any form.
+                  </div>
+                </div>
+              </li>
+              <li class="referal-rules__item stack">
+                <div class="referal-rules__item-number">02</div>
+                <div class="referal-rules__item-content stack column">
+                  <div class="typography h6">
+                    Mention the name of the service
+                  </div>
+                  <div class="typography w-400 lh-150">
+                    In promotional materials, messages in the Lamoda group or to
+                    subscribers of this store in private messages.
+                  </div>
+                </div>
+              </li>
+              <li class="referal-rules__item stack">
+                <div class="referal-rules__item-number">03</div>
+                <div class="referal-rules__item-content stack column">
+                  <div class="typography h6">
+                    Use part or full brand name Lamoda
+                  </div>
+                  <div class="typography w-400 lh-150">
+                    And partner stores in website domain names and landing
+                    pages.
+                  </div>
+                </div>
+              </li>
+              <li class="referal-rules__item stack">
+                <div class="referal-rules__item-number">04</div>
+                <div class="referal-rules__item-content stack column">
+                  <div class="typography h6">
+                    Create any mobile applications
+                  </div>
+                  <div class="typography w-400 lh-150">
+                    Extensions and groups in social networks on behalf of
+                    Yamanet, using the logo and other identity of the service.
+                  </div>
+                </div>
+              </li>
+              <li class="referal-rules__item stack">
+                <div class="referal-rules__item-number">05</div>
+                <div class="referal-rules__item-content stack column">
+                  <div class="typography h6">Use contextual advertising</div>
+                  <div class="typography w-400 lh-150">
+                    Google Adsense, Yandex direct and others
+                  </div>
+                </div>
+              </li>
+              <li class="referal-rules__item stack">
+                <div class="referal-rules__item-number">06</div>
+                <div class="referal-rules__item-content stack column">
+                  <div class="typography h6">Post referral links</div>
+                  <div class="typography w-400 lh-150">
+                    in the comments to the products on the AliExpress website.
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="referal-rules__violation">
+              <span class="icon">
+                <img
+                  src="img/ui/info.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </span>
+              <span class="text">
+                Violation will result in the blocking of the user without the
+                possibility of withdrawing funds.
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="payment section">
+          <div class="container">
+            <div class="payment__wrapper stack column">
+              <div class="payment__text">
+                <p>You can withdraw your cashback in any manual way:</p>
+              </div>
+              <ul class="payment__list">
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide1.svg"
+                      width="66"
+                      height="66"
+                      loading="lazy"
+                      alt="BANK Transfer"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide2.svg"
+                      width="105"
+                      height="30"
+                      loading="lazy"
+                      alt="PayPal"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide3.svg"
+                      width="116"
+                      height="24"
+                      loading="lazy"
+                      alt="Binance"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide4.svg"
+                      width="90"
+                      height="30"
+                      loading="lazy"
+                      alt="VISA"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide5.svg"
+                      width="68"
+                      height="55"
+                      loading="lazy"
+                      alt="MasterCard"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide6.svg"
+                      width="96"
+                      height="50"
+                      loading="lazy"
+                      alt="UPI"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide7.svg"
+                      width="115"
+                      height="24"
+                      loading="lazy"
+                      alt="Recharge"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide8.png"
+                      width="115"
+                      height="24"
+                      loading="lazy"
+                      alt="Amazon pay"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide9.png"
+                      width="115"
+                      height="24"
+                      loading="lazy"
+                      alt="Flipcart"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      @include("html/common/footer.html")
+    </div>
+  </body>
+</html>

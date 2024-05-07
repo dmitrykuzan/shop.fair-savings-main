@@ -1,0 +1,271 @@
+<section class="hero stack center">
+  <div class="hero__bg">
+    <picture>
+      <source
+        srcset="
+          img/hero/hero-mobile@1x.webp 1x,
+          img/hero/hero-mobile@2x.webp 2x
+        "
+        type="image/webp"
+        media="(max-width: 576px)"
+      />
+      <source
+        srcset="img/hero/hero-mobile@1x.jpg 1x, img/hero/hero-mobile@2x.jpg 2x"
+        type="image/jpg"
+        media="(max-width: 576px)"
+      />
+      <source
+        srcset="img/hero/hero@1x.webp 1x, img/hero/hero@2x.webp 2x"
+        type="image/webp"
+      />
+      <img
+        src="img/hero/hero@1x.jpg"
+        srcset="img/hero/hero@2x.jpg 2x"
+        width="1920"
+        height="508"
+        aria-hidden="true"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+  <div class="container">
+    <div class="hero__wrapper stack align-center column">
+      <div class="hero__info stack column align-center">
+        <h1 class="hero__title typography h1">
+          Discount search engine for your purchases
+        </h1>
+        <div class="hero__text">
+          <p>
+            More than two million users around the world are looking for stores
+            with cashback in the Megabonus cashback service
+          </p>
+        </div>
+      </div>
+      <form class="hero__search stack column">
+        <div class="hero__search-wrapper">
+          <div class="hero__search-icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </div>
+          <input
+            type="search"
+            placeholder="Search store..."
+            class="hero__search-input"
+          />
+          <button class="hero__search-button" type="submit">Search</button>
+
+          <div class="search__dropdowm stack column">
+            <div class="search__dropdowm-category">
+              <div class="search__dropdowm-text">
+                <p>Shops</p>
+              </div>
+              <ul class="search__dropdowm-list">
+                <li class="search__dropdowm-item">
+                  <a href="#">
+                    <div
+                      class="search__dropdowm-image search__dropdowm-image--long"
+                    >
+                      <picture>
+                        <source
+                          srcset="
+                            img/ui/search-dropdown/aliexpress@1x.webp 1x,
+                            img/ui/search-dropdown/aliexpress@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="img/ui/search-dropdown/aliexpress@1x.jpg"
+                          srcset="img/ui/search-dropdown/aliexpress@2x.jpg 2x"
+                          width="60"
+                          height="401"
+                          aria-hidden="true"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <p class="search__dropdowm-text">Aliexpress</p>
+                  </a>
+                </li>
+                <li class="search__dropdowm-item">
+                  <a href="#">
+                    <div
+                      class="search__dropdowm-image search__dropdowm-image--long"
+                    >
+                      <picture>
+                        <source
+                          srcset="
+                            img/ui/search-dropdown/italist@1x.webp 1x,
+                            img/ui/search-dropdown/italist@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="img/ui/search-dropdown/italist@1x.jpg"
+                          srcset="img/ui/search-dropdown/italist@2x.jpg 2x"
+                          width="60"
+                          height="401"
+                          aria-hidden="true"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <p class="search__dropdowm-text">Italist</p>
+                  </a>
+                </li>
+                <li class="search__dropdowm-item">
+                  <a href="#">
+                    <div
+                      class="search__dropdowm-image search__dropdowm-image--long"
+                    >
+                      <picture>
+                        <source
+                          srcset="
+                            img/ui/search-dropdown/alibris@1x.webp 1x,
+                            img/ui/search-dropdown/alibris@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="img/ui/search-dropdown/alibris@1x.jpg"
+                          srcset="img/ui/search-dropdown/alibris@2x.jpg 2x"
+                          width="60"
+                          height="401"
+                          aria-hidden="true"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <p class="search__dropdowm-text">Aliexpress</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="search__dropdowm-category">
+              <div class="search__dropdowm-text">
+                <p>Goods</p>
+              </div>
+              <ul class="search__dropdowm-list">
+                <li class="search__dropdowm-item">
+                  <a href="#">
+                    <div
+                      class="search__dropdowm-image search__dropdowm-image--short"
+                    >
+                      <picture>
+                        <source
+                          srcset="
+                            img/ui/search-dropdown/airpods@1x.webp 1x,
+                            img/ui/search-dropdown/airpods@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <img
+                          src="img/ui/search-dropdown/airpods@1x.jpg"
+                          srcset="img/ui/search-dropdown/airpods@2x.jpg 2x"
+                          width="24"
+                          height="24"
+                          aria-hidden="true"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <p class="search__dropdowm-text">
+                      Apple AirPods Pro (MWP22)
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hero__search-example stack center">
+          <p>Example:</p>
+          <ul class="stack">
+            <li>
+              <a href="#">iHerb</a>
+            </li>
+            <li>
+              <a href="#">Aliexpress</a>
+            </li>
+            <li>
+              <a href="#">Banggood</a>
+            </li>
+            <li>
+              <a href="#">Banggood</a>
+            </li>
+            <li>
+              <a href="#">Banggood</a>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="hero__panel stack center">
+    <ul class="hero__panel-list stack">
+      <li class="hero__panel-item stack align-center">
+        <div class="hero__panel-image">
+          <img
+            src="img/ui/hand-shake.svg"
+            width="52"
+            height="52"
+            loading="lazy"
+            alt="Join with us for free"
+          />
+        </div>
+        <div class="hero__panel-info">
+          <p class="hero__panel-title">Step 1</p>
+          <div class="hero__panel-text">
+            <p>Join with us for free</p>
+          </div>
+        </div>
+      </li>
+      <li class="hero__panel-item stack align-center">
+        <div class="hero__panel-image">
+          <img
+            src="img/ui/tickets.svg"
+            width="52"
+            height="52"
+            loading="lazy"
+            alt="Go to retailers through us"
+          />
+        </div>
+        <div class="hero__panel-info">
+          <p class="hero__panel-title">Step 2</p>
+          <div class="hero__panel-text">
+            <p>Go to retailers through us</p>
+          </div>
+        </div>
+      </li>
+      <li class="hero__panel-item stack align-center">
+        <div class="hero__panel-image">
+          <img
+            src="img/ui/cashback.svg"
+            width="52"
+            height="52"
+            loading="lazy"
+            alt="Shop & Earn Cashback"
+          />
+        </div>
+        <div class="hero__panel-info">
+          <p class="hero__panel-title">Step 3</p>
+          <div class="hero__panel-text">
+            <p>Shop & Earn Cashback</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <a
+      href="registration.html"
+      class="hero__panel-button button button__fill button__google stack center"
+    >
+      <span>
+        <svg>
+          <use xlink:href="img/sprite.svg#google-enter"></use>
+        </svg>
+      </span>
+      <span> Sign up with Google </span>
+    </a>
+  </div>
+</section>

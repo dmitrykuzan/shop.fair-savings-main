@@ -1,0 +1,184 @@
+.stores {
+  &__title {
+    margin-bottom: 5rem;
+
+    @media (max-width: em(767)) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__list-wrapper {
+    gap: 2.8rem;
+
+    @media (max-width: em(767)) {
+      gap: 1.5rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 2.8rem;
+
+    @media (max-width: em(1280)) {
+      gap: 2rem;
+    }
+
+    @media (max-width: em(767)) {
+      gap: 1.5rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6rem;
+    transition: border var(--transition);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      border: 0.1rem solid var(--clr-primary-300);
+      border-radius: 0.6rem;
+      width: 100%;
+      height: 100%;
+      transition: border var(--transition);
+    }
+
+    svg {
+      position: absolute;
+      left: -0.7rem;
+      z-index: 2;
+      width: 1.2rem;
+      height: 100%;
+      fill: var(--clr-default-100);
+      stroke: var(--clr-primary-300);
+      transition: stroke var(--transition);
+    }
+
+    a {
+      display: block;
+      padding-top: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 1.5rem;
+      padding-left: 3rem;
+
+      @media (max-width: em(1280)) {
+        padding-left: 1.5rem;
+      }
+    }
+
+    &-top {
+      position: relative;
+      padding-bottom: 1.2rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: calc(100% + 3rem);
+        height: 0.2rem;
+        background-image: url(../img/stores/dashed-line.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translateX(-50%);
+      }
+    }
+
+    &-logo {
+      width: 13rem;
+
+      div {
+        position: relative;
+        padding-bottom: 40%;
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+
+      @media (max-width: em(1280)) {
+        width: 10rem;
+      }
+    }
+
+    &-label {
+      position: absolute;
+      right: -1.5rem;
+      top: -1.5rem;
+      border-radius: 0rem 0.6rem 0rem 2.4rem;
+      padding: 1rem;
+      min-height: 6rem;
+      max-width: 9rem;
+      background-color: var(--clr-primary-600);
+
+      &-value {
+        font-weight: 600;
+        font-size: fluid-font(1.6rem, 1.4rem);
+        line-height: 125%;
+        color: var(--clr-default-100);
+      }
+
+      &-text {
+        font-size: 1.2rem;
+        line-height: 150%;
+        color: var(--clr-default-100);
+      }
+    }
+
+    &-text {
+      padding-top: 1.5rem;
+      padding-right: 1.5rem;
+
+      p {
+        line-height: 143%;
+        color: var(--clr-default-700);
+      }
+
+      @media (max-width: em(1280)) {
+        padding-right: initial;
+      }
+    }
+
+    @media (max-width: em(767)) {
+      min-height: 15rem;
+    }
+
+    @media (hover) {
+      &:hover {
+        svg {
+          stroke: var(--clr-default-500);
+          transition: stroke var(--transition);
+        }
+
+        &::before {
+          border: 0.1rem solid var(--clr-default-500);
+          transition: border var(--transition);
+        }
+      }
+    }
+  }
+
+  &__link {
+    min-height: 4.8rem;
+    color: var(--clr-default-500);
+    transition: border var(--transition);
+
+    @media (hover) {
+      &:hover {
+        border: 0.1rem solid var(--clr-default-500);
+        transition: border var(--transition);
+      }
+    }
+  }
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>FairSavings</title>
+    <meta name="description" lang="ru" content="Описание сайта" />
+
+    @include("html/common/head.html")
+  </head>
+
+  <body>
+    <div class="wrapper" data-overlay="false">
+      @include("html/common/promotional.html")
+      @include("html/common/header.html")
+      <main>
+        <div class="profile">
+          <div class="container">
+            <div class="profile-layout stack align-start">
+              @include("html/common/profile-sidebar.html")
+              <div class="profile-content stack column">
+                <div class="profile-head stack column">
+                  <h1 class="profile-head__title typography">Home</h1>
+                  <div class="profile-head__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing eli
+                  </div>
+                </div>
+                <div
+                  class="profile-cash stack align-center justify-space-between"
+                >
+                  <div
+                    class="profile-cash-card stack column justify-space-between white"
+                  >
+                    <div
+                      class="profile-cash-card__title stack align-center typography"
+                    >
+                      On balance
+                      <div class="profile-cash-card__tooltip">
+                        <img
+                          src="img/ui/tooltip.svg"
+                          width="16"
+                          height="16"
+                          alt="Tooltip - On Balance"
+                        />
+                        <div class="profile-cash-card__tooltip-content">
+                          Tooltip content
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="profile-cash-card__content stack align-end justify-space-between"
+                    >
+                      <div class="profile-cash-card__info stack column">
+                        <div class="typography caption w-400">You earn:</div>
+                        <div class="profile-cash-card__cash stack align-center">
+                          <div class="profile-cash-card__number typography">
+                            52
+                          </div>
+                          <div class="stack column">
+                            <span>$</span>
+                            <span>Bonus</span>
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        href="/"
+                        class="profile-cash-card__action stack align-center"
+                      >
+                        <span class="typography w-400 white">
+                          Withdraw money
+                        </span>
+                        <span class="icon stack center">
+                          <svg
+                            width="6"
+                            height="10"
+                            viewBox="0 0 6 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 1L5 5L1 9"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="profile-cash-card stack column justify-space-between"
+                  >
+                    <div
+                      class="profile-cash-card__title stack align-center typography"
+                    >
+                      On balance
+                      <div class="profile-cash-card__tooltip">
+                        <img
+                          src="img/ui/tooltip-light.svg"
+                          width="16"
+                          height="16"
+                          alt="Tooltip - On Balance"
+                        />
+                        <div class="profile-cash-card__tooltip-content">
+                          Tooltip content
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="profile-cash-card__content stack align-end justify-space-between"
+                    >
+                      <div class="profile-cash-card__info stack column">
+                        <div class="typography caption w-400">You earn:</div>
+                        <div class="profile-cash-card__cash stack align-center">
+                          <div class="profile-cash-card__number typography">
+                            52
+                          </div>
+                          <div class="stack column">
+                            <span>$</span>
+                            <span>Bonus</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile-settings stack align-start justify-space-between"
+                >
+                  <div class="profile-settings__column stack column">
+                    <div class="profile-settings-card stack column">
+                      <div class="profile-settings-card__info stack column">
+                        <div class="profile-settings-card__title typography">
+                          Special information
+                        </div>
+                      </div>
+                      <div class="profile-settings-card__content">
+                        <form class="profile-form__special stack column">
+                          <div
+                            class="profile-form__special-inputs stack column"
+                          >
+                            <div class="form-input error">
+                              <label>
+                                <span class="form-input__label">Email:</span>
+                                <div class="form-input__wrapper">
+                                  <input type="text" />
+                                </div>
+                                <div class="form-input__caption">
+                                  Caption text, description, notification
+                                </div>
+                              </label>
+                            </div>
+                            <div class="form-input">
+                              <label>
+                                <span class="form-input__label">Name:</span>
+                                <div class="form-input__wrapper">
+                                  <input type="text" />
+                                </div>
+                              </label>
+                            </div>
+                            <div class="form-input">
+                              <label>
+                                <span class="form-input__label">Surname:</span>
+                                <div class="form-input__wrapper">
+                                  <input type="text" />
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                          <button
+                            class="profile-form__button button button__orange-border"
+                          >
+                            Save
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="profile-settings-card stack column">
+                      <div class="profile-settings-card__info stack column">
+                        <div class="profile-settings-card__title typography">
+                          Password
+                        </div>
+                      </div>
+                      <div class="profile-settings-card__content">
+                        <form class="profile-form__special stack column">
+                          <div
+                            class="profile-form__special-inputs stack column"
+                          >
+                            <div class="form-input">
+                              <label>
+                                <span class="form-input__label"
+                                  >New password:</span
+                                >
+                                <div class="form-input__wrapper">
+                                  <input type="password" />
+                                </div>
+                              </label>
+                            </div>
+                            <div class="form-input">
+                              <label>
+                                <span class="form-input__label"
+                                  >Repeat new password:</span
+                                >
+                                <div class="form-input__wrapper">
+                                  <input type="password" />
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                          <button
+                            class="profile-form__button button button__orange-border"
+                          >
+                            Save
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-settings__column stack column">
+                    <div class="profile-settings-card stack column">
+                      <div class="profile-settings-card__info stack column">
+                        <div class="profile-settings-card__title typography">
+                          Social
+                        </div>
+                        <div class="profile-settings-card__subtitle">
+                          Сonnect social networks for a more convenient entrance
+                          to FairSavings
+                        </div>
+                      </div>
+                      <div class="profile-settings-card__content">
+                        <form class="profile-form__social stack column">
+                          <div
+                            class="profile-settings__social stack align-center justify-space-between"
+                          >
+                            <div
+                              class="profile-settings__social-content stack align-center"
+                            >
+                              <div class="profile-settings__social-icon">
+                                <img
+                                  src="img/ui/facebook.svg"
+                                  width="32"
+                                  height="32"
+                                  alt="Facebook"
+                                />
+                              </div>
+                              <div class="profile-settings__social-title">
+                                Facebook
+                              </div>
+                            </div>
+                            <div class="form-switch">
+                              <label>
+                                <input type="checkbox" />
+                                <span></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div
+                            class="profile-settings__social stack align-center justify-space-between"
+                          >
+                            <div
+                              class="profile-settings__social-content stack align-center"
+                            >
+                              <div class="profile-settings__social-icon">
+                                <img
+                                  src="img/ui/instagram.svg"
+                                  width="32"
+                                  height="32"
+                                  alt="Instagram"
+                                />
+                              </div>
+                              <div class="profile-settings__social-title">
+                                Instagram
+                              </div>
+                            </div>
+                            <div class="form-switch">
+                              <label>
+                                <input type="checkbox" />
+                                <span></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div
+                            class="profile-settings__social stack align-center justify-space-between"
+                          >
+                            <div
+                              class="profile-settings__social-content stack align-center"
+                            >
+                              <div class="profile-settings__social-icon">
+                                <img
+                                  src="img/ui/twitter.svg"
+                                  width="32"
+                                  height="32"
+                                  alt="Twitter"
+                                />
+                              </div>
+                              <div class="profile-settings__social-title">
+                                Twitter
+                              </div>
+                            </div>
+                            <div class="form-switch">
+                              <label>
+                                <input type="checkbox" />
+                                <span></span>
+                              </label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @include("html/common/footer.html")
+    </div>
+  </body>
+</html>

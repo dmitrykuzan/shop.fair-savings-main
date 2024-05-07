@@ -1,0 +1,242 @@
+.header {
+  position: relative;
+  z-index: 15;
+  &__bar {
+    min-height: 8rem;
+    background-color: var(--clr-default-200);
+
+    @media (max-width: em(575)) {
+      min-height: 6rem;
+    }
+
+    &-wrapper {
+      gap: 2rem;
+    }
+  }
+
+  &__menu {
+    min-height: 9rem;
+    background-color: var(--clr-default-100);
+
+    &-list {
+      column-gap: 3rem;
+    }
+
+    &-item {
+      a {
+        column-gap: 0.7rem;
+        color: var(--clr-default-700);
+
+        img {
+          max-width: 2.4rem;
+        }
+      }
+    }
+  }
+
+  &__menu-wrapper {
+    column-gap: 3rem;
+  }
+
+  //catalog
+
+  &__catalog {
+    min-height: 9rem;
+    background-color: var(--clr-default-100);
+
+    @media (max-width: em(1080)) {
+      min-height: 8rem;
+    }
+
+    &-wrapper {
+      gap: 3rem;
+
+      @media (max-width: em(1180)) {
+        gap: 1.5rem;
+      }
+    }
+
+    &-button {
+      justify-content: center;
+      min-width: 12rem;
+      min-height: 4rem;
+      color: var(--clr-default-500);
+      gap: 1rem;
+
+      &-lines {
+        position: relative;
+        width: 1.8rem;
+        height: 1rem;
+
+        &::before,
+        &::after,
+        span {
+          content: "";
+          position: absolute;
+          border-radius: 111rem;
+          width: 100%;
+          height: 0.2rem;
+          background-color: var(--clr-default-500);
+          transition: transform var(--transition);
+        }
+
+        &::before {
+          top: 0;
+        }
+
+        &::after {
+          bottom: 0;
+        }
+
+        span {
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &.active {
+        .header__catalog-button-lines {
+          span {
+            transform: scale(0);
+            transition: transform var(--transition);
+          }
+
+          &::before {
+            top: 0.5rem;
+            transform: rotate(-45deg);
+            transition: transform var(--transition);
+          }
+
+          &::after {
+            bottom: 0.3rem;
+            transform: rotate(45deg);
+            transition: transform var(--transition);
+          }
+        }
+      }
+
+      @media (max-width: em(992)) {
+        min-width: 100%;
+      }
+    }
+
+    &-list {
+      gap: 3rem;
+
+      @media (max-width: em(1180)) {
+        gap: 1.5rem;
+      }
+
+      @media (max-width: em(1080)) {
+        display: none;
+      }
+    }
+
+    &-item {
+      a {
+        display: flex;
+        align-items: center;
+        line-height: 143%;
+        color: var(--clr-default-700);
+        transition: color var(--transition);
+        gap: 0.7rem;
+      }
+
+      &-image {
+        flex-shrink: 0;
+        height: 2.4rem;
+        max-width: 2.4rem;
+      }
+
+      @media (hover) {
+        &:hover a {
+          color: var(--clr-default-500);
+          transition: color var(--transition);
+        }
+      }
+    }
+  }
+
+  &__button-wrapper {
+    @media (max-width: em(992)) {
+      min-width: 100%;
+    }
+  }
+
+  &__full-wrapper {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 10;
+    flex-direction: column;
+    overflow: auto;
+    border-top: 0.1rem solid var(--clr-primary-300);
+    padding-top: 4.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4.5rem;
+    padding-left: 1.5rem;
+    width: 100%;
+    background-color: var(--clr-default-100);
+    transform: translateX(-100%);
+    transition: transform var(--transition);
+
+    &.active {
+      transform: translateX(0);
+      transition: transform var(--transition);
+    }
+  }
+
+  &__full-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 121rem;
+    gap: 3rem;
+
+    @media (max-width: em(767)) {
+      display: flex;
+      flex-direction: column;
+      gap: initial;
+    }
+  }
+
+  &__full-item {
+    @media (max-width: em(767)) {
+      display: flex;
+      margin-left: -1.5rem;
+      border-bottom: 0.1rem solid var(--clr-primary-400);
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      width: calc(100% + 3rem);
+      min-height: 5rem;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: fluid-font(1.6rem, 1.4rem);
+      color: var(--clr-default-700);
+      transition: color var(--transition);
+      gap: 0.6rem;
+    }
+
+    &-image {
+      flex-shrink: 0;
+      max-width: 5.2rem;
+      @media (max-width: em(767)) {
+        max-width: 2.4rem;
+      }
+    }
+
+    @media (hover) {
+      &:hover a {
+        color: var(--clr-default-500);
+        transition: color var(--transition);
+      }
+    }
+  }
+}

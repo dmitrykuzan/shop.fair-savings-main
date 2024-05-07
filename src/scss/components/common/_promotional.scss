@@ -1,0 +1,33 @@
+.promotional {
+  z-index: 15;
+  min-height: 4rem;
+  background-color: var(--clr-default-700);
+
+  &__wrapper {
+    column-gap: 2.5rem;
+
+    @media (max-width: em(575)) {
+      column-gap: 1.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &__image {
+    flex-shrink: 0;
+  }
+
+  &__text {
+    font-size: fluid-font(1.4rem, 1.2rem);
+    line-height: 143%;
+    text-align: center;
+    color: var(--clr-default-100);
+  }
+
+  &__link {
+    flex-shrink: 0;
+    border: 0.1rem solid var(--clr-default-600);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

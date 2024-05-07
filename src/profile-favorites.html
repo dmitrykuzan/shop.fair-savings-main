@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>FairSavings</title>
+    <meta name="description" lang="ru" content="Описание сайта" />
+
+    @include("html/common/head.html")
+  </head>
+
+  <body>
+    <div class="wrapper" data-overlay="false">
+      @include("html/common/promotional.html")
+      @include("html/common/header.html")
+      <main>
+        <div class="profile">
+          <div class="container">
+            <div class="profile-layout stack align-start">
+              @include("html/common/profile-sidebar.html")
+              <div class="profile-content stack column">
+                <div class="profile-head stack column">
+                  <h1 class="profile-head__title typography">
+                    Favorites store
+                  </h1>
+                  <div class="profile-head__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing eli
+                  </div>
+                </div>
+                <div class="profile-favorites stack column">
+                  <div class="profile-favorites__title typography h6">
+                    Cashback
+                  </div>
+                  <ul class="profile-favorites__list">
+                    <li class="stores__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#circle"></use>
+                      </svg>
+                      <a href="#">
+                        <div class="stores__item-top">
+                          <div class="stores__item-logo">
+                            <div>
+                              <picture>
+                                <source
+                                  srcset="
+                                    img/stores/store16@1x.webp 1x,
+                                    img/stores/store16@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <img
+                                  src="img/stores/store16@1x.png"
+                                  srcset="img/stores/store16@2x.png 2x"
+                                  width="128"
+                                  height="50"
+                                  alt="TrainLine"
+                                  loading="lazy"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="stores__item-label">
+                            <span class="stores__item-label-value">15%</span>
+                            <span class="stores__item-label-text"
+                              >cashback</span
+                            >
+                          </div>
+                        </div>
+                        <div class="stores__item-text">
+                          <p>Hosting & Internet providers, Services</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="stores__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#circle"></use>
+                      </svg>
+                      <a href="#">
+                        <div class="stores__item-top">
+                          <div class="stores__item-logo">
+                            <div>
+                              <picture>
+                                <source
+                                  srcset="
+                                    img/stores/store16@1x.webp 1x,
+                                    img/stores/store16@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <img
+                                  src="img/stores/store16@1x.png"
+                                  srcset="img/stores/store16@2x.png 2x"
+                                  width="128"
+                                  height="50"
+                                  alt="TrainLine"
+                                  loading="lazy"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="stores__item-label">
+                            <span class="stores__item-label-value">15%</span>
+                            <span class="stores__item-label-text"
+                              >cashback</span
+                            >
+                          </div>
+                        </div>
+                        <div class="stores__item-text">
+                          <p>Hosting & Internet providers, Services</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="stores__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#circle"></use>
+                      </svg>
+                      <a href="#">
+                        <div class="stores__item-top">
+                          <div class="stores__item-logo">
+                            <div>
+                              <picture>
+                                <source
+                                  srcset="
+                                    img/stores/store16@1x.webp 1x,
+                                    img/stores/store16@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <img
+                                  src="img/stores/store16@1x.png"
+                                  srcset="img/stores/store16@2x.png 2x"
+                                  width="128"
+                                  height="50"
+                                  alt="TrainLine"
+                                  loading="lazy"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="stores__item-label">
+                            <span class="stores__item-label-value">15%</span>
+                            <span class="stores__item-label-text"
+                              >cashback</span
+                            >
+                          </div>
+                        </div>
+                        <div class="stores__item-text">
+                          <p>Hosting & Internet providers, Services</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="profile-favorites stack column">
+                  <div class="profile-favorites__title typography h6">
+                    Promocode
+                  </div>
+                  <ul class="profile-favorites__list">
+                    <li class="discounts__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#circle-long"></use>
+                      </svg>
+                      <div class="discounts__item-top">
+                        <div class="discounts__item-wrapper">
+                          <div class="discounts__item-logo">
+                            <div>
+                              <picture>
+                                <source
+                                  srcset="
+                                    img/discounts/discount8@1x.webp 1x,
+                                    img/discounts/discount8@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <img
+                                  src="img/discounts/discount8@1x.png"
+                                  srcset="img/discounts/discount8@2x.png 2x"
+                                  width="160"
+                                  height="50"
+                                  alt="TrainLine"
+                                  loading="lazy"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="discounts__item-label">
+                          <span class="discounts__item-label-value">-6%</span>
+                          <span class="discounts__item-label-text"
+                            >discount</span
+                          >
+                        </div>
+                      </div>
+                      <div class="discounts__item-text">
+                        <p>
+                          For fast checkout from IndianCashback to 1mg & getting
+                          Up To 5% Cashback for all your purchases
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        class="discounts__item-link button button__orange-border"
+                        >Show code</a
+                      >
+                    </li>
+                    <li class="discounts__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#circle-long"></use>
+                      </svg>
+                      <div class="discounts__item-top">
+                        <div class="discounts__item-wrapper">
+                          <div class="discounts__item-logo">
+                            <div>
+                              <picture>
+                                <source
+                                  srcset="
+                                    img/discounts/discount8@1x.webp 1x,
+                                    img/discounts/discount8@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <img
+                                  src="img/discounts/discount8@1x.png"
+                                  srcset="img/discounts/discount8@2x.png 2x"
+                                  width="160"
+                                  height="50"
+                                  alt="TrainLine"
+                                  loading="lazy"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="discounts__item-label">
+                          <span class="discounts__item-label-value">-6%</span>
+                          <span class="discounts__item-label-text"
+                            >discount</span
+                          >
+                        </div>
+                      </div>
+                      <div class="discounts__item-text">
+                        <p>
+                          For fast checkout from IndianCashback to 1mg & getting
+                          Up To 5% Cashback for all your purchases
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        class="discounts__item-link button button__orange-border"
+                        >Show code</a
+                      >
+                    </li>
+                    <li class="discounts__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#circle-long"></use>
+                      </svg>
+                      <div class="discounts__item-top">
+                        <div class="discounts__item-wrapper">
+                          <div class="discounts__item-logo">
+                            <div>
+                              <picture>
+                                <source
+                                  srcset="
+                                    img/discounts/discount8@1x.webp 1x,
+                                    img/discounts/discount8@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <img
+                                  src="img/discounts/discount8@1x.png"
+                                  srcset="img/discounts/discount8@2x.png 2x"
+                                  width="160"
+                                  height="50"
+                                  alt="TrainLine"
+                                  loading="lazy"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="discounts__item-label">
+                          <span class="discounts__item-label-value">-6%</span>
+                          <span class="discounts__item-label-text"
+                            >discount</span
+                          >
+                        </div>
+                      </div>
+                      <div class="discounts__item-text">
+                        <p>
+                          For fast checkout from IndianCashback to 1mg & getting
+                          Up To 5% Cashback for all your purchases
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        class="discounts__item-link button button__orange-border"
+                        >Show code</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @include("html/common/footer.html")
+    </div>
+  </body>
+</html>

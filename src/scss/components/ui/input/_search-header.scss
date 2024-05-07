@@ -1,0 +1,135 @@
+.search__header {
+  position: relative;
+
+  &-form {
+    &.active {
+      .search__dropdowm {
+        top: 5rem;
+        z-index: 3;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  @media (max-width: em(767)) {
+    margin-left: auto;
+  }
+
+  @media (max-width: em(575)) {
+    position: initial;
+  }
+
+  &-desktop {
+    @media (max-width: em(575)) {
+      display: none;
+    }
+  }
+
+  &-mobile {
+    display: none;
+    height: 2.4rem;
+
+    @media (max-width: em(575)) {
+      display: block;
+    }
+
+    &-bar {
+      @media (max-width: em(575)) {
+        position: absolute;
+        left: 0;
+        top: 6rem;
+        padding: 1.5rem;
+        width: 100%;
+        background-color: var(--clr-default-200);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--transition), visibility var(--transition);
+        pointer-events: none;
+      }
+    }
+
+    &.active {
+      .search__header-mobile-bar {
+        z-index: 3;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity var(--transition), visibility var(--transition);
+        pointer-events: initial;
+      }
+    }
+  }
+
+  &-label {
+    position: relative;
+  }
+
+  &-input {
+    outline: none;
+    border-radius: 0.8rem;
+    padding-right: 2rem;
+    padding-left: 2.5rem;
+    min-width: 40rem;
+    min-height: 4rem;
+
+    &::placeholder {
+      font-size: 1.4rem;
+      color: var(--clr-default-600);
+    }
+
+    @media (max-width: em(1180)) {
+      min-width: 30rem;
+    }
+
+    @media (max-width: em(992)) {
+      padding-right: 1rem;
+      padding-left: 1.5rem;
+      min-width: 25rem !important;
+    }
+  }
+
+  &-button {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    transform: translateY(-50%);
+
+    svg {
+      width: 1.8rem;
+      height: 1.8rem;
+      fill: var(--clr-default-900);
+    }
+
+    @media (max-width: em(575)) {
+      position: initial;
+      right: initial;
+      top: initial;
+      width: 2.4rem;
+      height: 2.4rem;
+      transform: initial;
+
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+
+    &.active {
+      svg {
+        fill: var(--clr-default-500);
+        transition: fill var(--transition);
+      }
+    }
+
+    @media (hover) {
+      &:hover {
+        svg {
+          fill: var(--clr-default-500);
+          transition: fill var(--transition);
+        }
+      }
+    }
+  }
+}

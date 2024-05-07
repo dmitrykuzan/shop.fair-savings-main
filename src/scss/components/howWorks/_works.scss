@@ -1,0 +1,99 @@
+.how-works {
+  padding-top: 3rem;
+
+  &__wrapper {
+    gap: 2.8rem;
+  }
+
+  &__content {
+    flex: 0 1 65%;
+    gap: 3.2rem;
+
+    @media (max-width: em(992)) {
+      flex: auto;
+      gap: 2.4rem;
+    }
+  }
+
+  &__decor {
+    flex: 0 1 35%;
+
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
+
+  &__steps {
+    gap: 2.4rem;
+  }
+
+  &__step {
+    gap: 1.2rem;
+
+    &-image {
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    &-content {
+      gap: 0.4rem;
+    }
+
+    &-caption {
+      color: var(--clr-default-300);
+    }
+  }
+
+  &__btn {
+    border: 0.1rem solid transparent;
+    border-radius: 0.8rem;
+    padding: 1.6rem 3.2rem;
+    width: max-content;
+    min-height: 6.4rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--clr-default-100);
+    background-color: var(--clr-default-500);
+    transition: border-color var(--transition), color var(--transition),
+      background-color var(--transition);
+    gap: 1.2rem;
+
+    .icon {
+      display: flex;
+
+      svg {
+        width: 3.2rem;
+        height: 3.2rem;
+        fill: var(--clr-default-100);
+        transition: fill var(--transition);
+      }
+    }
+
+    &.focus-visible {
+      outline: none;
+      border-color: var(--clr-default-500);
+      color: var(--clr-default-500);
+      background-color: transparent;
+
+      .icon {
+        svg {
+          fill: var(--clr-default-500);
+        }
+      }
+    }
+
+    @media (hover) {
+      &:hover {
+        border-color: var(--clr-default-500);
+        color: var(--clr-default-500);
+        background-color: transparent;
+
+        .icon {
+          svg {
+            fill: var(--clr-default-500);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.banners {
+  padding-top: 11rem;
+
+  @media (max-width: em(767)) {
+    padding-top: 19rem;
+  }
+
+  @media (max-width: em(575)) {
+    padding-top: 22rem;
+  }
+
+  &__slider {
+  }
+
+  &__slide {
+    &-image {
+      img {
+        border-radius: 2.4rem;
+
+        @media (max-width: em(575)) {
+          border-radius: 0.8rem;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,63 @@
+<div class="modal modal-login">
+  <div class="modal__wrapper">
+    <div class="modal__content modal-login__content">
+      <h3 class="modal-login__title typography h2">Log in</h3>
+      <div class="modal-login__subtitle">
+        <p>if you're a new user? <a href="#">Join</a></p>
+      </div>
+      <form class="registration__form modal-login__form stack column">
+        <div class="registration__form-wrapper stack column">
+          <div class="form-input">
+            <label>
+              <span class="form-input__label"> Email </span>
+              <div class="form-input__wrapper">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Yourmail@mail.com"
+                />
+              </div>
+            </label>
+          </div>
+          <div class="form-input">
+            <label>
+              <span class="form-input__label"> Password </span>
+              <div class="form-input__wrapper">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="************"
+                />
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <a
+          href="registration.html"
+          class="registration__form-submit button button__fill action--modal-registration"
+          type="button"
+          >Login</a
+        >
+        <button type="button" class="modal-login__forgot modal-login__password">
+          Forgot password?
+        </button>
+      </form>
+
+      <div class="registration__separator modal-login__separator stack center">
+        <span>or</span>
+      </div>
+
+      <button
+        class="registration__button modal-login__google button__orange-border button button__google button__orange-border"
+      >
+        <span>
+          <svg>
+            <use xlink:href="img/sprite.svg#google-enter"></use>
+          </svg>
+        </span>
+        <span> Sign up with Google </span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.new {
+  &__discount-slider {
+    padding-right: 1.5rem;
+    padding-left: calc((100% - 60rem) / 2);
+
+    @media (max-width: em(992)) {
+      padding-left: 2rem;
+    }
+  }
+
+  &__discounts-item {
+    .discounts__item-wrapper {
+      @media (max-width: em(575)) {
+        width: 13rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.modal-registration {
+  .modal__wrapper {
+    padding-top: 8rem;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    min-height: 65rem;
+    max-width: 50rem;
+
+    @media (max-width: em(767)) {
+      min-height: 35rem;
+      gap: 3rem;
+    }
+
+    @media (max-width: em(575)) {
+      min-height: 30rem;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    left: 50%;
+    top: -5.5rem;
+    width: 64rem;
+    height: 51rem;
+    transform: translateX(-50%);
+
+    @media (max-width: em(767)) {
+      width: 22.5rem;
+      height: 18rem;
+    }
+
+    @media (max-width: em(575)) {
+      top: -7rem;
+    }
+  }
+
+  &__info {
+    margin-top: auto;
+    gap: 1.5rem;
+  }
+
+  &__title {
+    font-size: fluid-font(3.2rem, 2rem);
+  }
+
+  &__text {
+    p {
+      font-size: 1.6rem;
+      line-height: 150%;
+      text-align: center;
+    }
+  }
+
+  &__button {
+    min-width: 100%;
+    min-height: 5rem;
+    transition: background-color var(--transition);
+
+    @media (hover) {
+      &:hover {
+        background-color: var(--clr-hover-500);
+        transition: background-color var(--transition);
+      }
+    }
+  }
+}

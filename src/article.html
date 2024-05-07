@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>FairSavings</title>
+    <meta name="description" lang="ru" content="Описание сайта" />
+
+    @include("html/common/head.html")
+  </head>
+
+  <body>
+    <div class="wrapper" data-overlay="false">
+      @include("html/common/promotional.html")
+      @include("html/common/header.html")
+      <main>
+        <div class="article">
+          <div class="container">
+            <ul class="breadcrumbs stack align-center">
+              <li class="breadcrumbs__item">
+                <a href="#">Home page </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#">Blog </a>
+              </li>
+              <li class="breadcrumbs__item">Heading</li>
+            </ul>
+            <h1 class="shops__title typography h2">Heading</h1>
+            <div
+              class="article-wrapper stack align-start justify-space-between"
+            >
+              <div class="article-content">
+                <img src="img/hero/hero@2x.jpg" alt="" />
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+                <p>
+                  Some text Some text Some text Some textSome text Some text
+                  Some text Some text Some text Some text Some textSome text
+                  Some text Some text Some text Some text Some text Some
+                  textSome text Some text Some text Some text Some text Some
+                  text Some textSome text Some text Some text Some text Some
+                  text Some text Some textSome text Some text Some text
+                  <a href="/">Link</a>
+                </p>
+                <p>
+                  Some text Some text Some text Some textSome text Some text
+                  Some text
+                </p>
+                <ul>
+                  <li>
+                    Some text Some text Some text Some textSome text Some text
+                    Some text Some text Some text Some text Some textSome text
+                    Some text Some text Some text Some text Some text Some
+                    textSome text Some text Some text Some text Some text Some
+                    text Some textSome text Some text Some text Some text Some
+                    text Some text Some textSome text Some text Some text
+                  </li>
+                  <li>List</li>
+                  <li>List</li>
+                  <li>List</li>
+                </ul>
+
+                <ol>
+                  <li>
+                    Some text Some text Some text Some textSome text Some text
+                    Some text Some text Some text Some text Some textSome text
+                    Some text Some text Some text Some text Some text Some
+                    textSome text Some text Some text Some text Some text Some
+                    text Some textSome text Some text Some text Some text Some
+                    text Some text Some textSome text Some text Some text
+                  </li>
+                  <li>List</li>
+                  <li>List</li>
+                  <li>List</li>
+                </ol>
+              </div>
+              <aside class="article-sidebar stack column">
+                <div class="ticket__magazine-card stack center column">
+                  <div class="ticket__magazine-favorites stack center">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#favorites"></use>
+                    </svg>
+                  </div>
+                  <div class="ticket__magazine-wrapper stack center column">
+                    <div class="ticket__magazine-logo">
+                      <img
+                        src="img/magazine/ticket/magazine-logo.svg"
+                        width="230"
+                        height="54"
+                        loading="lazy"
+                        alt="AliExpress"
+                      />
+                    </div>
+                    <div class="ticket__magazine-info stack center column">
+                      <a
+                        href="#"
+                        class="ticket__magazine-link stack align-center"
+                      >
+                        <svg>
+                          <use xlink:href="img/sprite.svg#link-icon"></use>
+                        </svg>
+                        <span>aliexpress.com</span>
+                      </a>
+                      <div class="ticket__magazine-sale">
+                        <p>15% - 26%</p>
+                      </div>
+                      <div class="ticket__magazine-text">
+                        <p>up to cashback</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="ticket__magazine-button button button__orange-border"
+                  >
+                    Activate cashback
+                  </button>
+                </div>
+                <div class="article-stores stack column">
+                  <div class="article-stores__title typography w-400 grey">
+                    Similar stores with cashback:
+                  </div>
+                  <ul class="stack column">
+                    <li class="stores__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#circle"></use>
+                      </svg>
+                      <a href="#">
+                        <div class="stores__item-top">
+                          <div class="stores__item-logo">
+                            <div>
+                              <picture>
+                                <source
+                                  srcset="
+                                    img/stores/store15@1x.webp 1x,
+                                    img/stores/store15@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <img
+                                  src="img/stores/store15@1x.png"
+                                  srcset="img/stores/store15@2x.png 2x"
+                                  width="128"
+                                  height="50"
+                                  alt="PatPat"
+                                  loading="lazy"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="stores__item-label">
+                            <span class="stores__item-label-value">15%</span>
+                            <span class="stores__item-label-text"
+                              >cashback</span
+                            >
+                          </div>
+                        </div>
+                        <div class="stores__item-text">
+                          <p>
+                            Home, Garden & Decoration, Clothing & Shoes, Health
+                            & Beauty
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="stores__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#circle"></use>
+                      </svg>
+                      <a href="#">
+                        <div class="stores__item-top">
+                          <div class="stores__item-logo">
+                            <div>
+                              <picture>
+                                <source
+                                  srcset="
+                                    img/stores/store15@1x.webp 1x,
+                                    img/stores/store15@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <img
+                                  src="img/stores/store15@1x.png"
+                                  srcset="img/stores/store15@2x.png 2x"
+                                  width="128"
+                                  height="50"
+                                  alt="PatPat"
+                                  loading="lazy"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="stores__item-label">
+                            <span class="stores__item-label-value">15%</span>
+                            <span class="stores__item-label-text"
+                              >cashback</span
+                            >
+                          </div>
+                        </div>
+                        <div class="stores__item-text">
+                          <p>
+                            Home, Garden & Decoration, Clothing & Shoes, Health
+                            & Beauty
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+        <section class="payment section">
+          <div class="container">
+            <div class="payment__wrapper stack column">
+              <div class="payment__text">
+                <p>You can withdraw your cashback in any manual way:</p>
+              </div>
+              <ul class="payment__list">
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide1.svg"
+                      width="66"
+                      height="66"
+                      loading="lazy"
+                      alt="BANK Transfer"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide2.svg"
+                      width="105"
+                      height="30"
+                      loading="lazy"
+                      alt="PayPal"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide3.svg"
+                      width="116"
+                      height="24"
+                      loading="lazy"
+                      alt="Binance"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide4.svg"
+                      width="90"
+                      height="30"
+                      loading="lazy"
+                      alt="VISA"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide5.svg"
+                      width="68"
+                      height="55"
+                      loading="lazy"
+                      alt="MasterCard"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide6.svg"
+                      width="96"
+                      height="50"
+                      loading="lazy"
+                      alt="UPI"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide7.svg"
+                      width="115"
+                      height="24"
+                      loading="lazy"
+                      alt="Recharge"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide8.png"
+                      width="115"
+                      height="24"
+                      loading="lazy"
+                      alt="Amazon pay"
+                    />
+                  </div>
+                </li>
+                <li class="payment__item stack center">
+                  <div class="payment__item-image">
+                    <img
+                      src="img/payment/slide9.png"
+                      width="115"
+                      height="24"
+                      loading="lazy"
+                      alt="Flipcart"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      @include("html/common/footer.html")
+    </div>
+  </body>
+</html>

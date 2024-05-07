@@ -1,0 +1,64 @@
+.policy {
+  padding-top: 0.3rem;
+
+  &-wrapper {
+    max-width: 70rem;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: fluid-font(3.2rem, 2rem);
+    line-height: 125%;
+  }
+
+  &-content {
+    margin-top: 3.2rem;
+    gap: 3.2rem;
+
+    @media (max-width: em(767)) {
+      margin-top: 2.4rem;
+      gap: 2.4rem;
+    }
+  }
+
+  &-block {
+    gap: 2rem;
+
+    &__title {
+      font-weight: 600;
+      font-size: fluid-font(2.4rem, 1.8rem);
+      line-height: 125%;
+    }
+
+    &__content {
+      font-size: 1.6rem;
+      line-height: 150%;
+      gap: 1.6rem;
+
+      ul,
+      ol {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+
+      ul li {
+        position: relative;
+        padding-left: 1.6rem;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 1rem;
+          border-radius: 50%;
+          width: 0.6rem;
+          height: 0.6rem;
+          background-color: currentColor;
+        }
+      }
+    }
+  }
+}

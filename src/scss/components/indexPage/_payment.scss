@@ -1,0 +1,40 @@
+.payment {
+  margin-bottom: 8rem;
+
+  @media (max-width: em(575)) {
+    margin-bottom: 3rem;
+  }
+
+  &__wrapper {
+    gap: 5rem;
+    @media (max-width: em(575)) {
+      gap: 1.5rem;
+    }
+  }
+
+  &__text {
+    p {
+      font-size: fluid-font(2.4rem, 1.8rem);
+      line-height: 133%;
+      text-align: center;
+
+      @media (max-width: em(575)) {
+        font-size: 1.4rem;
+        text-align: start;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1rem;
+  }
+
+  &__item {
+    border-radius: 0.6rem;
+    padding: 1rem;
+    min-height: 13rem;
+    background-color: var(--clr-default-200);
+  }
+}
